@@ -1,0 +1,315 @@
+html {
+  scroll-behavior: smooth; /* Scroll suave ao clicar em links âncora */
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(245, 245, 245, 0.753);
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: rgba(245, 245, 245, 0.753);
+  margin-bottom: 30px;
+}
+
+/* Imagens laterais */
+.cavaleiro {
+  position: relative;
+  left: 10%;
+  max-width: 250px;
+}
+
+.fogueira {
+  position: relative;
+  left: 50%;
+  max-width: 250px;
+}
+
+section {
+  height: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: transparent;
+}
+
+/* Barra de navegação fixa no topo */
+nav {
+  background-color: rgba(5, 19, 97, 0.233);
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(68, 67, 67, 0.63);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgba(237, 237, 240, 0.863);
+  font-size: 1.1em;
+  padding: 8px 15px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(126, 93, 187);
+  color: #ffffff;
+}
+
+/* Fundo da página com imagem fixa */
+body {
+  background-image: url('imagens/5630939.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 60px; /* Espaço para a navbar fixa */
+}
+
+/* Container central */
+#contexto {
+  width: 920px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Seção Sobre Mim */
+#sobre-mim h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgba(245, 245, 245, 0.753);
+}
+
+.sobre-mim p {
+  color: rgba(245, 245, 245, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilização de imagens */
+img {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+/* Galeria horizontal */
+.fotos {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  padding: 5px;
+  color: rgba(245, 245, 245, 0.753);
+}
+
+.fotos figure {
+  margin: 5px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.fotos figure img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.fotos figcaption {
+  font-size: 0.95em;
+  color: rgba(245, 245, 245, 0.753);
+}
+
+/* Galeria com quebra de linha */
+.foto1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 5px;
+  color: rgba(245, 245, 245, 0.753);
+}
+
+.foto1 figure {
+  margin: 5px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.foto1 figcaption {
+  font-size: 0.95em;
+  color: rgba(245, 245, 245, 0.753);
+}
+
+/* Seção Formação */
+#sobre-minha-formação h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgba(245, 245, 245, 0.753);
+}
+
+.sobre-minha-formação p {
+  color: rgba(245, 245, 245, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Seção Portfólio */
+#portifólio h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgba(245, 245, 245, 0.753);
+}
+
+.portifólio p {
+  color: rgba(245, 245, 245, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portifólio a {
+  display: block;
+  margin: 0 auto;
+  color: rgb(83, 29, 182);
+  background-color: rgba(245, 245, 245, 0.781);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+  transition: color 0.3s ease;
+}
+
+.portifólio a:hover {
+  color: rgb(115, 91, 160);
+  text-decoration: underline;
+}
+
+.octocat {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+/* Seção Contato */
+#para-contato h1,
+#para-contato p {
+  color: rgba(68, 67, 67, 0.63);
+  margin-bottom: 30px;
+}
+
+.para-contato {
+  background-color: rgba(245, 245, 245, 0.753);
+  padding: 50px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Campos do formulário */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(0, 123, 255, 0.356);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+  background-color: rgb(126, 93, 187);
+  color: rgba(245, 245, 245, 0.753);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(168, 137, 224);
+}
+
+/* Mensagens do formulário */
+.error-message {
+  color: #dc3545;
+  font-size: 0.9em;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 1em;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configuração do conjunto de caracteres e visualização em dispositivos móveis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portifólio Samantha Rodrigues</title>
+
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Script JavaScript carregado de forma assíncrona -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- Navegação para seções da página -->
+<nav>
+    <ul>
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#sobre-minha-formação">Sobre minha formação</a></li>
+        <li><a href="#portifólio">Portfólio</a></li>
+        <li><a href="#para-contato">Para contato</a></li>
+    </ul>
+</nav>
+
+<!-- Títulos principais da página -->
+<h1>SAMANTHA RODRIGUES</h1>
+<h2>bem vindo(a) ao meu portifólio pessoal!</h2>
+
+<!-- Imagens decorativas -->
+<img src="imagens/chevalier-pixel-art.gif" alt="cavaleiro" class="cavaleiro">
+<img src="imagens/fogueira.gif" alt="fogueira" class="fogueira">
+
+<!-- Seção: Sobre mim -->
+<div id="contexto">
+    <section id="sobre-mim"> 
+        <h1>Um pouco sobre mim</h1>
+        
+        <!-- Texto pessoal -->
+        <div class="sobre-mim">
+            <p>
+                Olá, Mundo! meu nome é Samantha.
+                Tenho 18 anos e atualmente curso análise e desenvolvimento de sistemas pela UNINTER;
+                Sou corredora, leitora ávida e gamer. <br>
+                Gosto muito de cozinhar e experimentar novas receitas.
+                planejo futuramente ser emprendedora; também gostaria de dominar
+                a linguagem Python e desenvolver jogos.
+            </p> 
+        </div>
+
+        <!-- Galeria de fotos pessoais -->
+        <div class="fotos">
+            <figure>
+                <img src="imagens/WhatsApp Image 2025-06-05 at 10.14.56.jpeg" alt="correndo numa tarde de sábado">
+                <figcaption>correndo numa tarde de sábado</figcaption>
+            </figure>
+
+            <figure>
+                <img src="imagens/WhatsApp Image 2025-06-05 at 10.14.56 (1).jpeg" alt="jogando minecraft e ouvindo lofi">
+                <figcaption>jogando minecraft e ouvindo lofi</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="imagens/WhatsApp Image 2025-06-05 at 10.14.57.jpeg" alt="ratattoulie feito por mim">
+                <figcaption>ratattoulie feito por mim</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Espaço extra para separação visual -->
+    <br><br><br><br><br><br><br>
+
+    <!-- Seção: Formação acadêmica -->
+    <section id="sobre-minha-formação">
+        <div class="sobre-minha-formação">
+            <h1>Minha formação acadêmica</h1>
+            <p>
+                Concluí o ensino médio integrado ao curso técnico em logística no ano de 2024, me formando com destaque pelo alto desempenho e TCC nota 10. <br>
+                Atualmente curso análise e desenvolvimento de sistemas pela UNINTER, na qual consegui uma bolsa de estudos pela nota ENEM; estou adorando esta jornada...
+            </p>
+            <br> 
+        </div>
+
+        <!-- Foto de apresentação de TCC -->
+        <div class="foto1">
+            <figure>
+                <img src="imagens/WhatsApp Image 2025-06-18 at 19.56.38.jpeg" alt="apresentação de TCC">
+                <figcaption>Apresentação de TCC ao final do curso de logística</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Mais espaço para separar as seções -->
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Seção: Portfólio -->
+    <section id="portifólio">
+        <div class="portifólio">
+            <h1>Portifólio</h1>
+            <p>
+                Começando na programação e desenvolvimento web, 
+                tenho poucos trabalhos relacionados a esta área, porém tenho sede
+                de conhecimento e tenho estudado cada vez mais sobre o assunto. 
+                Tenho facilidade em aprender e sou apaixonada por design gráfico de jogos
+            </p>
+            <br>
+            
+            <!-- Link para o GitHub -->
+            <p>Link para meu GitHub:</p> 
+            <a href="https://github.com/samrodrigs" target="_blank" rel="noopener noreferrer">
+                Visite meu perfil!
+            </a>
+            <br> 
+
+            <!-- Imagem decorativa do GitHub -->
+            <img src="imagens/octocat.gif" alt="octocat" class="octocat">
+        </div>
+    </section>
+
+    <!-- Seção: Formulário de contato -->
+    <section id="para-contato">
+        <div class="para-contato">
+            <h1>Contate-me!</h1>
+            <p>Preencha o formulário abaixo e me deixe uma mensagem</p>
+
+            <!-- Formulário com campos validados via JavaScript -->
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message" id="nameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+
+                <!-- Botão de envio -->
+                <button type="submit">Enviar Mensagem</button>
+
+                <!-- Mensagem de sucesso após envio -->
+                <div id="successMessage" class="success-message"></div>
+            </form>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
